@@ -7,12 +7,22 @@ Bonus:
 Aggiungere alla pagina un’immagine, presa anch’essa inserendo il percoso in una propietá dell'oggetto restituito dalla funzione data.
 
 */
-const {{ createApp }} = Vue
+const { createApp } = Vue
 
     createApp({
         data(){
             return {
-                titolo: 'Hello!'
-            }       
+                userName: 'Pietro',
+                color: 'red',
+                image: ''
+            }
+
         }
+    
     }).mount('#app');
+
+
+
+
+
+

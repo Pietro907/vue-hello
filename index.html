@@ -1,17 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vue Hello</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
+
 <body>
-    
-    <h1 id="app" v-model="titolo"></h1>
-    {{titolo}}
-    
-    <script src="./assets/js/script.js"></script>
+    <div id="app">
+
+        <!-- stampa dinamica dell'input (la variabile viene richiamata grazie alle {{color}}) -->
+        {{color}}
+        <!-- input grazie v-model stampa quello che scriviamo all interno in modo dinamico -->
+        <input v-model="color">
+
+        <!-- Inseriamo in un h1 il dato userName contenuto nell'obj (per abbreviare chiamiamo variabile) -->
+        <h1>{{userName}}</h1>
+        {{userName}}
+        
+
+        <img src="" alt="">
+
+
+    </div>
+
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./assets/js/script.js"></script>
+
 </body>
+
 </html>
