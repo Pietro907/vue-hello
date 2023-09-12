@@ -14,7 +14,7 @@ const { createApp } = Vue
             return {
                 userName: 'Pietro',
                 color: 'red',
-                image: ''
+                image: 'https://picsum.photos/400/400'
             }
 
         }
